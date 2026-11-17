@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1d1619">
+  <title>Suit Duel · Piece 1</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="speaker-notes.js" defer></script>
+  <script src="deck.js" defer></script>
+</head>
+<body>
+  <main class="deck" aria-label="Suit Duel presentation">
+    <div class="viewport" id="viewport">
+      <div class="stage-frame" id="stage-frame">
+        <div class="slides" id="slides">
+          <section class="slide cover" id="slide-1" aria-labelledby="cover-title">
+            <div class="cover-ink" aria-hidden="true"></div>
+            <div class="cover-main">
+              <p class="piece-label">Piece 1</p>
+              <h1 id="cover-title"><img class="wordmark" src="assets/wordmark.webp" alt="Suit Duel"></h1>
+              <p class="cover-subtitle">A card battle for 2–5 players</p>
+              <div class="cover-fan" aria-hidden="true">
+                <div class="cover-star"></div>
+                <img class="fan-heart" src="assets/hearts.webp" alt="">
+                <img class="fan-diamond" src="assets/diamonds.webp" alt="">
+                <img class="fan-spade" src="assets/spades.webp" alt="">
+                <img class="fan-club" src="assets/clubs.webp" alt="">
+              </div>
+            </div>
+            <aside class="timeline-paper">
+              <h2>Rule evolution</h2>
+              <ol class="timeline">
+                <li><b>V1</b><span>Character powers and suit matchups</span></li>
+                <li><b>V1.1</b><span>Red–black matching and a race to empty your hand</span></li>
+                <li><b>V1.2.1</b><span>Attack, Defense and Boost</span></li>
+                <li><b>V1.2.4</b><span>Secret choices and simultaneous attacks</span></li>
+              </ol>
+              <p class="test-note"><b>V1.2.2 playtest</b> Players needed a way to respond to the first attack.</p>
+            </aside>
+          </section>
+
+          <section class="slide setup" id="slide-2" aria-labelledby="setup-title" hidden>
+            <header class="slide-heading"><h2 id="setup-title">Setup &amp; Goal</h2><p>2–5 players · Free-for-all</p></header>
+            <div class="setup-grid">
+              <div class="deck-board paper">
+                <h3><strong>100</strong> cards</h3>
+                <p class="deck-sub">25 per suit</p>
+                <div class="suit-line" aria-label="Hearts, Diamonds, Spades and Clubs">
+                  <img src="assets/hearts.webp" alt="Hearts · Attack">
+                  <img src="assets/diamonds.webp" alt="Diamonds · Attack">
+                  <img src="assets/spades.webp" alt="Spades · Defense">
+                  <img src="assets/clubs.webp" alt="Clubs · Boost">
+                </div>
+                <p class="deck-note">No ranks, jokers or card exchanges.</p>
+              </div>
+              <div class="personal-board">
+                <article class="stat paper"><div><strong>9</strong><h3>cards in hand</h3></div><div class="mini-hand" aria-hidden="true"><i></i><i></i><i></i></div></article>
+                <article class="stat stat-hp"><div><strong>10</strong><h3>starting HP</h3></div><div class="dice" aria-label="Two dice at five each"><i class="die"></i><i class="die"></i></div></article>
+              </div>
+            </div>
+            <p class="goal-strip"><strong>At 0 HP, you’re out.</strong> The last player standing wins.</p>
+          </section>
+
+          <section class="slide choices" id="slide-3" aria-labelledby="choices-title" hidden>
+            <header class="slide-heading"><h2 id="choices-title">Choose Your Play</h2></header>
+            <p class="lead">Play <strong>one suit</strong> at a time, usually 3–5 cards, or pass and keep your hand.</p>
+            <table class="effects" aria-label="Effect by suit and number of cards used">
+              <thead><tr><th scope="col">Suit &amp; action</th><th scope="col">3 cards</th><th scope="col">4 cards</th><th scope="col">5 cards</th></tr></thead>
+              <tbody>
+                <tr><th scope="row"><div class="table-suit"><span class="table-art attack-art"><img src="assets/hearts.webp" alt="Hearts"><img src="assets/diamonds.webp" alt="Diamonds"></span><span><b>ATTACK</b><small>Hearts or Diamonds</small></span></div></th><td><b>2</b> damage</td><td><b>3</b> damage</td><td><b>4</b> damage</td></tr>
+                <tr><th scope="row"><div class="table-suit"><span class="table-art"><img src="assets/spades.webp" alt=""></span><span><b>DEFENSE</b><small>Spades spent to block</small></span></div></th><td>Block <b>3</b></td><td>Block <b>5</b></td><td>Block <b>7</b></td></tr>
+                <tr><th scope="row"><div class="table-suit"><span class="table-art"><img src="assets/clubs.webp" alt=""></span><span><b>BOOST</b><small>Clubs for your next attack</small></span></div></th><td><b>+3</b> damage</td><td><b>+5</b> damage</td><td><b>+7</b> damage</td></tr>
+              </tbody>
+            </table>
+            <div class="choice-notes">
+              <div><b>Spades</b><p>Set a 0–5 card spend limit. Unspent Spades stay on the table.</p></div>
+              <div><b>Clubs</b><p>Store one group. Spend it all on your next attack.</p></div>
+            </div>
+          </section>
+
+          <section class="slide round" id="slide-4" aria-labelledby="round-title" hidden>
+            <header class="slide-heading"><h2 id="round-title">How a Round Works</h2></header>
+            <div class="round-grid">
+              <ol class="round-steps">
+                <li><span class="step-no">1</span><div><h3>Choose in secret</h3><p>Choose one suit and a living opponent. Confirm to lock in, or pass. No time limit.</p></div></li>
+                <li><span class="step-no">2</span><div><h3>Reveal together</h3><p>Once all living players confirm or pass, reveal cards and targets.</p></div></li>
+                <li><span class="step-no">3</span><div><h3>Place new defenses</h3><p>New Spades can block damage this round.</p></div></li>
+                <li><span class="step-no">4</span><div><h3>Resolve attacks together</h3><p>Add up incoming damage before blocking. Attacks still land if their player is eliminated this round.</p></div></li>
+              </ol>
+              <aside class="bonus paper">
+                <div class="bonus-no">+1</div>
+                <h3>First valid confirmation</h3>
+                <ul><li><b>Attack</b><span>1 extra damage now</span></li><li><b>Defense</b><span>1 extra block if used this round</span></li><li><b>Boost</b><span>1 extra damage stored for your next attack</span></li></ul>
+                <p>Passing earns no bonus.</p>
+              </aside>
+            </div>
+            <p class="round-note">Attack hits the chosen opponent. Defense and Boost apply to the player who plays them.</p>
+          </section>
+
+          <section class="slide demo" id="slide-5" aria-labelledby="demo-title" data-phase="0" hidden>
+            <header class="slide-heading"><h2 id="demo-title">One Round in Action</h2><p>Three players · 10 HP each</p></header>
+            <div class="players">
+              <article class="player player-a paper">
+                <header><h3>Player A</h3><span class="demo-open action-tag" hidden>Attack</span></header>
+                <div class="demo-hidden"><div class="card-back" aria-hidden="true"></div><p>Choice hidden</p></div>
+                <div class="demo-open" hidden><div class="demo-stack" role="img" aria-label="Five Hearts">
+                  <img style="--offset:-2" src="assets/hearts.webp" alt=""><img style="--offset:-1" src="assets/hearts.webp" alt=""><img style="--offset:0" src="assets/hearts.webp" alt=""><img style="--offset:1" src="assets/hearts.webp" alt=""><img style="--offset:2" src="assets/hearts.webp" alt="">
+                </div><p class="play-description"><b>5 Hearts → B</b><br>First valid confirmation</p></div>
+                <p class="demo-result" hidden><b>4 + 1 = 5</b> damage</p>
+              </article>
+              <article class="player player-b paper">
+                <header><h3>Player B</h3><span class="demo-open action-tag" hidden>Defense</span></header>
+                <div class="demo-hidden"><div class="card-back" aria-hidden="true"></div><p>Choice hidden</p></div>
+                <div class="demo-open" hidden><div class="demo-stack" role="img" aria-label="Three Spades">
+                  <img style="--offset:-1" src="assets/spades.webp" alt=""><img style="--offset:0" src="assets/spades.webp" alt=""><img style="--offset:1" src="assets/spades.webp" alt="">
+                </div><p class="play-description"><b>3 Spades</b><br>Spend limit of 3</p></div>
+                <p class="demo-result" hidden><b>Blocks 3</b> · Takes 2</p>
+              </article>
+              <article class="player player-c paper">
+                <header><h3>Player C</h3><span class="demo-open action-tag" hidden>Boost</span></header>
+                <div class="demo-hidden"><div class="card-back" aria-hidden="true"></div><p>Choice hidden</p></div>
+                <div class="demo-open" hidden><div class="demo-stack" role="img" aria-label="Three Clubs">
+                  <img style="--offset:-1" src="assets/clubs.webp" alt=""><img style="--offset:0" src="assets/clubs.webp" alt=""><img style="--offset:1" src="assets/clubs.webp" alt="">
+                </div><p class="play-description"><b>3 Clubs</b><br>Stored for the next attack</p></div>
+                <p class="demo-result" hidden><b>+3</b> on the next attack</p>
+              </article>
+              <span class="attack-arrow demo-result" aria-hidden="true" hidden>→</span>
+            </div>
+            <div class="demo-footer">
+              <div class="hp-result" aria-live="polite"><span>B’s HP</span><strong id="demo-hp">10</strong></div>
+              <p class="demo-status" id="demo-status" aria-live="polite">All three players lock in their choices.</p>
+              <button class="demo-button" type="button" id="demo-advance">Reveal cards <span aria-hidden="true">→</span></button>
+            </div>
+          </section>
+
+          <section class="slide finish" id="slide-6" aria-labelledby="finish-title" hidden>
+            <header class="slide-heading"><h2 id="finish-title">Win, Draw, or Refill</h2><p>After all attacks resolve</p></header>
+            <div class="outcomes">
+              <article class="outcome winner paper"><span class="outcome-count">1</span><p class="outcome-label">survivor</p><h3>That player wins.</h3></article>
+              <article class="outcome paper"><span class="outcome-count">0</span><p class="outcome-label">survivors</p><h3>The game ends in a draw.</h3></article>
+              <article class="outcome continue"><span class="outcome-count">2+</span><p class="outcome-label">survivors</p><h3>Refill to 9 cards.</h3><p>Start the next round.</p></article>
+            </div>
+            <div class="after-round paper"><p><b>Eliminated?</b> Discard all your cards in hand and on the table.</p><p><b>Draw pile empty?</b> Shuffle the discards to make a new draw pile.</p></div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <nav class="toolbar" aria-label="Presentation controls">
+      <button id="notes-open" type="button" aria-haspopup="dialog">Speaker notes</button>
+      <div class="slide-nav">
+        <button id="prev" type="button" title="Previous slide (←)" aria-label="Previous slide">←</button>
+        <span id="slide-counter" aria-live="polite">1 / 6</span>
+        <button id="next" type="button" title="Next slide (→)" aria-label="Next slide">→</button>
+      </div>
+      <button id="fullscreen" type="button" title="Toggle fullscreen (F)">Fullscreen</button>
+    </nav>
+  </main>
+
+  <dialog id="notes" aria-labelledby="notes-title">
+    <div class="notes-header">
+      <div><p id="notes-time"></p><h2 id="notes-title">Speaker notes</h2></div>
+      <form method="dialog"><button type="submit" aria-label="Close speaker notes">×</button></form>
+    </div>
+    <div class="note-language" aria-label="Speaker notes language">
+      <button type="button" data-language="en" aria-pressed="true">English</button>
+      <button type="button" data-language="zh" aria-pressed="false" lang="zh-CN">中文</button>
+    </div>
+    <div id="notes-content"></div>
+  </dialog>
+</body>
+</html>
