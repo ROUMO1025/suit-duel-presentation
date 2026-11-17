@@ -199,8 +199,13 @@ dialog::backdrop{background:#190c14ac}
 .note-language button[aria-pressed="true"]{background:var(--red);color:#fff;border-color:var(--red)}
 #notes-content{font-size:17px;line-height:1.61}
 #notes-content p+p{margin-top:12px}
+#notes-content .note-pair+.note-pair{border-top:1px solid #d2c2bc88;margin-top:17px;padding-top:14px}
+#notes-content .note-pair p[lang="zh-CN"]{color:#665455}
 #notes-content .cue{border-left:4px solid var(--red);padding:7px 12px;background:#efe2db;color:#732539;font-weight:650}
+#notes-content details{margin-top:18px;border-top:1px solid #d2c2bc;padding-top:12px}
+#notes-content summary{cursor:pointer;font-size:14px;font-weight:650;color:var(--muted)}
 #notes-content aside{margin-top:16px;border-top:1px solid #d2c2bc;padding-top:12px;color:var(--muted);font-size:15px}
+#notes-content details aside{border:0;margin-top:9px;padding:0}
 
 @media(max-width:650px) and (orientation:portrait){
   .viewport{display:block;overflow:auto;overscroll-behavior:contain;padding:0;background:var(--board)}

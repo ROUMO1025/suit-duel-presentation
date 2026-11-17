@@ -1,88 +1,73 @@
-# SUIT DUEL · Five-minute speaker script
+# SUIT DUEL 五分钟中英文对照讲稿
 
-Use one language for the full five-minute talk. The times match the six slides and include the demonstration pause.
+英文正常语速加翻牌停顿约五分钟。每段英文后紧接对应中文。
 
-中英文为两套独立的五分钟讲稿。时间与六页幻灯片对应，已包含演示停顿。
+## 第 1 页 · SUIT DUEL
+**0:00–0:40**
 
-## 01 · SUIT DUEL · 0:00–0:40
+Hi everyone. Our game is called Suit Duel. It’s a card battle for two to five players. At first, every attack involved card numbers, character powers, and suit matchups. We also tried a version where players raced to empty their hands. Later, we brought back health points and gave each suit a clear role. Playtesting showed that players needed a chance to defend, so now everyone chooses secretly and reveals together. Let me show you how it works.
 
-### English
+大家好，我们的游戏叫 Suit Duel，花色对决，是一款两到五人的卡牌对战游戏。最初，每次攻击都要计算牌面数字、角色能力和花色克制。我们也试过让玩家比赛谁先出完手牌。后来，我们重新加入血量，并让每种花色承担明确的功能。试玩发现，玩家需要及时防御的机会，所以现在大家先秘密选牌，再一起翻开。下面介绍具体怎么玩。
 
-This is Suit Duel, a free-for-all card game for two to five players. In the first version, a single attack meant checking card ranks, character powers, and which suit beat which. We tried a red-and-black version where you raced to empty your hand, then went back to a survival game with dedicated suits for attacking, defending, and boosting. Playtesting showed that the first attacker could hit before others could defend. Now everyone chooses in secret and reveals together.
+## 第 2 页 · Setup & Goal
+**0:40–1:10**
 
-### 中文
+Everyone starts with nine cards and ten health. We use two dice, each showing five, to track health. The deck has one hundred cards, twenty-five of each suit. The cards have no numbers. You can attack any opponent who’s still in the game. At zero health, you’re out. The last player standing wins.
 
-这是《花色对决》，一款两到五人的卡牌对战游戏。最早打一张牌，要同时看点数、角色能力和花色克制。我们也试过把规则改成红黑配牌，比谁先出完手牌，后来又回到生存对战，让花色分别负责攻击、防御和蓄力。试玩时发现，先攻击的人能在别人来得及防御之前打出伤害。所以现在大家先秘密选牌，选完以后一起翻开。
+每人开局有九张手牌和十点血量。我们用两颗各朝上五点的骰子记录血量。整副牌共一百张，每种花色二十五张，牌面没有数字。你可以攻击任意一名还在场上的对手。血量到零就出局，最后存活的人获胜。
 
-## 02 · Setup & Goal · 0:40–1:10
+## 第 3 页 · Choose Your Play
+**1:10–2:15**
 
-### English
+Each round, play three to five cards of one suit, or pass and keep your hand. Hearts and Diamonds both attack, but you can’t mix them in one play. Three cards deal two damage, four deal three, and five deal four.
 
-Each player starts with nine cards and ten health. Put two dice in front of you, each showing five, to track your health. The deck has one hundred cards, twenty-five of each suit. The cards have suit symbols and no ranks. Each player fights for themselves and can attack any opponent who’s still in the game. At zero health you’re out, and the last player standing wins.
+每轮可以出同一种花色的三到五张牌，也可以跳过，保留手牌。红桃和方片都能攻击，但不能混在一起出。三张造成两点伤害，四张造成三点，五张造成四点。
 
-### 中文
+Spades go on the table as shields. Spending three, four, or five blocks three, five, or seven damage. You set a spending limit from zero to five cards for the round. If no one attacks you, your Spades stay on the table.
 
-开局每人拿九张牌和两颗骰子。两颗骰子都朝上摆成五点，合起来就是十点血量。牌组一共一百张，四种花色各二十五张。出牌时看牌面上的花色。这里每个人都为自己作战，攻击时可以选任何一名还没出局的对手。血量到零就出局，最后留在场上的人获胜。
+黑桃放在桌上作为护盾。消耗三、四、五张，分别挡三、五、七点伤害。你可以提前设定，这轮最多愿意消耗零到五张。没人攻击你，黑桃就留在桌上。
 
-## 03 · Choose Your Play · 1:10–2:15
+Clubs add three, five, or seven damage to your next attack. You can store one group, and your next attack uses the whole group.
 
-### English
+梅花让下一次攻击增加三、五、七点伤害。你只能储存一组梅花，下次攻击时整组用掉。
 
-For the round, choose one suit, usually in a group of three to five cards. You can also pass and keep your hand. Hearts and Diamonds both attack, but you can’t mix them in the same play. Three Hearts deal two damage. The table shows what changes if you play four or five.
+## 第 4 页 · How a Round Works
+**2:15–3:15**
 
-Spades go on the table as a shield. Set how many you’re willing to spend this round. If you place five Spades and set your limit to three, at least two stay for later. If no one attacks you, your whole shield stays. Clubs boost your next attack. You can store one group of Clubs and use the whole group on your next attack. For example, three Clubs stored now add three damage when you next attack.
+Everyone picks in secret. Take your time, then confirm to lock in your choice. Once everyone confirms or passes, we reveal together. New shields go down first. Then all attacks land at the same time. If two people attack you, add their damage before blocking. Even if you’re knocked out this round, your attack still lands.
 
-### 中文
+大家秘密选择，可以慢慢考虑，按确认后就锁定选择。所有人确认或跳过后，一起翻牌。先放好新出的护盾，再同时结算所有攻击。如果两个人都攻击你，先把伤害加起来，再用护盾挡。即使你在这一轮被淘汰，已经选好的攻击仍然生效。
 
-每轮选一种花色，通常一起出三到五张。你也可以跳过，把手牌留着。红桃和方片都能攻击，但两张红桃加一张方片不能凑成一组。三张红桃打两点，出四张或五张的效果可以看表。
+The first valid confirmation gets a one-point bonus. Attack deals one extra damage. Defense blocks one extra point if used this round. Boost stores one extra damage for your next attack. Spades and Clubs always help you, even though you also select an opponent.
 
-黑桃摆在自己面前当盾。你可以先设定这一轮最多愿意用掉几张。比如你放了五张黑桃，把上限设成三张。就算被攻击，这轮也最多用掉三张，至少两张能留着。没人攻击你，盾就全留在桌上。梅花给下一次攻击蓄力，只能存一组，下次攻击时整组用掉。比如这轮存三张梅花，下次攻击就能多打三点。
+最先确认合法出牌的人获得一点奖励。攻击多打一，防御如果这轮用到了，就多挡一；蓄力为下一次攻击多存一点。使用黑桃和梅花时也要选择对手，但它们的实际效果都作用在自己身上。
 
-## 04 · How a Round Works · 2:15–3:15
+## 第 5 页 · One Round in Action
+**3:15–4:25**
 
-### English
+Let’s try one round with three players. A chooses five Hearts to attack B and confirms first. B can’t see A’s choice, but plays three Spades and sets a spending limit of three. C plays three Clubs to prepare for the next attack.
 
-First, choose your cards and a living opponent in secret. You can take your time. Confirming locks your choice. With Spades or Clubs, the target shows your intent and the effect applies to you.
+我们用三个人演示一轮。A 选择五张红桃攻击 B，而且最快确认。B 看不到 A 的选择，但决定出三张黑桃，并把消耗上限设为三张。C 出三张梅花，为下一次攻击做准备。
 
-Once every surviving player confirms or passes, we reveal together. New shields go down first. Then all attacks land together, even attacks by players knocked out this round. If two people hit you, add their damage before blocking it. The first legal confirmation earns one extra point. That’s one extra damage now, one extra block if used this round, or one extra damage stored for your next attack.
+*Click Reveal cards, pause for about 5 seconds, and point to B’s Spades.*
 
-### 中文
+*点击 Reveal cards，停顿约 5 秒，指向 B 的黑桃。*
 
-先秘密选牌和一名还在场上的对手。选牌不限时，按下确认就锁定。选黑桃或梅花时，目标只是展示意图，效果作用在自己身上。
+Now we reveal together. B’s shield goes down first. Five Hearts deal four damage, plus one for confirming first. That’s five damage. B spends three Spades to block three, so B loses two health.
 
-等所有存活玩家都确认或跳过，再一起亮牌。先放好新出的黑桃，然后所有攻击同时命中。这轮被打出局的人，已经选好的攻击也会生效。两个人都打你，就先把伤害加起来，再扣格挡。最早成功确认合法出牌的人会获得一点奖励。攻击多打一，黑桃这轮用上时多挡一，梅花为下次攻击多存一点。黑桃拿到奖励但这轮没有用来格挡，奖励就会失效。
+现在大家一起翻牌，先放好 B 的护盾。五张红桃造成四点伤害，加上最快确认的一点，共五点。B 消耗三张黑桃挡三点，所以实际失去两点血量。
 
-## 05 · One Round in Action · 3:15–4:25
+*Click Resolve round, show 10 → 8, and pause for about 5 seconds.*
 
-### English
+*点击 Resolve round，展示 10 → 8，停顿约 5 秒。*
 
-Let’s try it with three people. A plays five Hearts against B and is the first to confirm. B can’t see that choice, but plays three Spades and sets a limit of three. C plays three Clubs to prepare for their next attack.
+B goes from ten health to eight. C keeps a three-point boost for the next attack. All three players survive, so the game continues.
 
-*[Pause 10–15 seconds. Reveal the three plays together, then point to B’s shield before revealing the health change.]*
+B 的血量从十变成八。C 为下一次攻击保留了三点强化。三个人都还活着，游戏继续。
 
-Now the cards turn over together. B’s new shield goes down first. Five Hearts deal four damage, and A’s one-point bonus brings that up to five. B spends three Spades to block three of that damage. So B loses two health and goes from ten to eight. C stores three extra points for the next attack. If they play three Diamonds next time, two base damage plus those three makes five, before any new confirmation bonus.
+## 第 6 页 · Win, Draw, or Refill
+**4:25–5:00**
 
-### 中文
+After all attacks, check who’s still standing. Eliminated players discard their hands and the cards on their tables. If one player is left, they win. If everyone is knocked out, it’s a draw. Otherwise, every survivor refills to nine cards, and we start another round. When the draw pile runs out, shuffle the discards into a new one. Thanks!
 
-我们用三个人试一轮。A 选了五张红桃打 B，而且最快确认。B 看不到 A 的选择，决定出三张黑桃，并设定这轮最多用三张。C 出三张梅花，准备下次再攻击。
-
-*[停 10–15 秒，一起揭示三组牌，先指向 B 的护盾，再展示血量变化。]*
-
-现在一起翻牌，先摆好 B 的盾。五张红桃本来打四点，A 最快确认多一点，所以总共打五点。B 用三张黑桃挡三点，实际掉两点血，从十变成八。C 把三点强化留给下一次攻击。如果 C 下一轮用三张方片，基础伤害两点，加上存好的三点，就是五点。这个数还没算下一轮可能拿到的确认奖励。
-
-## 06 · Win, Draw, or Refill · 4:25–5:00
-
-### English
-
-After the attacks, check who’s still standing. A player at zero health discards their hand and the cards on their table. If only one player is left, they win. If everyone is knocked out, it’s a draw. Otherwise, every survivor refills to nine cards and we play another round. If the draw pile runs out, shuffle the discards into a new draw pile.
-
-### 中文
-
-攻击结算完，再看场上剩下几个人。血量到零的人出局，手里的牌和桌上的牌都要弃掉。只剩一人，那个人就赢。所有人同时出局就是平局。如果还有至少两个人存活，就各自把手牌补到九张，开始下一轮。像刚才那一轮，B 还有八点血，A 和 C 也没有出局，所以三个人都补牌。抽牌堆空了，就把弃牌洗成新的抽牌堆。
-
-## Presenter reference · 现场备查
-
-- **Spades.** Place three to five to start a shield. With one or two left on the table, you may add one or two. While choosing, set a spend limit from zero to five. Newly placed Spades count toward what is available this round. When attacked, spend no more than your limit and your available Spades. One or two Spades block one or two damage. Unused blocking power from spent Spades is lost. Unspent Spades stay on the table.
-- **黑桃。** 首次放三到五张。桌上只剩一到两张时，可补一到两张。选牌时设定零到五张的消耗上限，本轮新放的也能用。受击时，消耗张数同时受设定上限与可用数量限制。用一张挡一点，用两张挡两点。用掉的黑桃产生的多余格挡作废，未消耗的黑桃留在桌上。
-- **Confirmation bonus.** The server’s first successful confirmation of a legal play determines the bonus. Passing does not qualify. If Spades earn the bonus and are not used to block in that round, the bonus expires.
-- **确认奖励。** 以服务器最先成功确认的合法出牌为准，跳过不参与。黑桃拿到奖励但当轮未用于格挡，奖励失效。
+所有攻击结算完，再看谁还活着。出局的人弃掉所有手牌和桌上的牌。只剩一人就获胜，全员出局就是平局。如果还有至少两个人存活，大家就各自把手牌补到九张，开始下一轮。抽牌堆用完后，把弃牌堆洗成新的抽牌堆。谢谢大家！

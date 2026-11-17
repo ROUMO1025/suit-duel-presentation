@@ -13,7 +13,7 @@ const notesContent = document.querySelector('#notes-content');
 const languageButtons = Array.from(document.querySelectorAll('[data-language]'));
 
 let activeSlide = 0;
-let noteLanguage = 'en';
+let noteLanguage = 'both';
 
 function fitStage() {
   const padding = getComputedStyle(viewport);
@@ -67,24 +67,33 @@ function renderNotes() {
     button.setAttribute('aria-pressed', String(button.dataset.language === noteLanguage));
   });
 
-  const paragraphs = entry[noteLanguage].split('\n\n');
-  paragraphs.forEach((text, index) => {
-    const paragraph = document.createElement('p');
-    paragraph.textContent = text;
-    notesContent.append(paragraph);
-    if (entry.cue && index + 1 === entry.cueAfterParagraph) {
-      const cue = document.createElement('p');
-      cue.className = 'cue';
-      cue.textContent = entry.cue[noteLanguage];
-      notesContent.append(cue);
-    }
+  const languages = noteLanguage === 'both' ? ['en', 'zh'] : [noteLanguage];
+  entry.segments.forEach((segment) => {
+    const pair = document.createElement('div');
+    pair.className = segment.kind === 'cue' ? 'note-pair cue' : 'note-pair';
+    languages.forEach((language) => {
+      const paragraph = document.createElement('p');
+      paragraph.lang = language === 'zh' ? 'zh-CN' : 'en';
+      paragraph.textContent = segment[language];
+      pair.append(paragraph);
+    });
+    notesContent.append(pair);
   });
 
   const detail = extraNotes[slides[activeSlide].id];
   if (detail) {
+    const reference = document.createElement('details');
+    const summary = document.createElement('summary');
+    summary.textContent = noteLanguage === 'zh' ? '规则备查' : 'Rule reference';
     const aside = document.createElement('aside');
-    aside.textContent = detail[noteLanguage];
-    notesContent.append(aside);
+    languages.forEach((language) => {
+      const paragraph = document.createElement('p');
+      paragraph.lang = language === 'zh' ? 'zh-CN' : 'en';
+      paragraph.textContent = detail[language];
+      aside.append(paragraph);
+    });
+    reference.append(summary, aside);
+    notesContent.append(reference);
   }
 }
 
